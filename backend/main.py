@@ -7,6 +7,9 @@ import requests
 import os
 import asyncio
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
@@ -28,7 +31,7 @@ app.add_middleware(
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_ID = "openai/gpt-oss-120b"
-
+# print(GROQ_API_KEY)
 # ======================
 # Priority classification
 # ======================
