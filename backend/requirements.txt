@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+textblob
+python-multipart
+pydantic
+httpx
+python-dotenv
